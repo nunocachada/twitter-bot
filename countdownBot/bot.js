@@ -6,7 +6,7 @@ const path = require("path");
 const countdownBot = async (month = "dec") => {
   try {
     // Event Deadline
-    const deadline = new Date(`${month} 26, 2022, 08:00:00`);
+    const deadline = new Date(`${month} 26, 2022, 08:00:00`).getTime();
 
     //Current Time
     const now = new Date().getTime();
