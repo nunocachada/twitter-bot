@@ -14,3 +14,5 @@ This guide is designed for beginners.
 - create images folder and add three images for our tweets
 
 ### Let's get started!
+
+### Youtube Link: https://www.youtube.com/watch?v=fT5E1YWpdtw
