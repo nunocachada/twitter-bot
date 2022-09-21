@@ -1,0 +1,17 @@
+{
+  "name": "bot_twitter",
+  "version": "1.0.0",
+  "description": "Let's build a Twitter bot that will tweet for us. We will use an imaginary event for demo purposes. This guide is designed for beginners.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node countdownBot/bot"
+  },
+  "keywords": [],
+  "author": "Nuno Cachada",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "node-cron": "^3.0.2",
+    "twitter-api-v2": "^1.12.7"
+  }
+}
