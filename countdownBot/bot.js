@@ -50,14 +50,14 @@ const countdownBot = async (month = "dec") => {
 
     console.log(text);
 
-    // // Upload image to twitter
-    // const mediaId = await client.v1.uploadMedia(path.join(__dirname, imageUrl));
+    // Upload image to twitter
+    const mediaId = await client.v1.uploadMedia(path.join(__dirname, imageUrl));
 
-    // //Tweet!
-    // const tweet = await client.v2.tweet({
-    //   text,
-    //   media: { media_ids: [mediaId] },
-    // });
+    //Tweet!
+    const tweet = await client.v2.tweet({
+      text,
+      media: { media_ids: [mediaId] },
+    });
 
     console.log("Success!!!");
   } catch (error) {
@@ -65,22 +65,21 @@ const countdownBot = async (month = "dec") => {
   }
 };
 
+//Let's create a helper function for testing multiple dates
+const testBot = () => {
+  const months = ["dec", "oct", "sep"];
+  months.forEach((month) => countdownBot(month));
+};
+
+testBot();
+
 //Use node-cron to schedule tasks according to your needs.
 //In the example below, we will call our countdownBot function every 5 seconds.
 
-const task = cron.schedule("*/5 * * * * *", () => {
-  countdownBot();
-});
+// const task = cron.schedule("*/5 * * * * *", () => {
+//   countdownBot();
+// });
 
-task.start();
-
-//Let's create a helper function for testing multiple dates
-
-// const testBot = () => {
-//   const months = ["dec", "oct", "sep"];
-//   months.forEach((month) => countdownBot(month));
-// };
-// countdownBot();
-// testBot();
+// task.start();
 
 //Thanks!
