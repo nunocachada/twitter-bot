@@ -25,7 +25,7 @@ In this tutorial, we will build a Twitter bot that automatically generates and p
 2. Run the following command:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/twitter-bot.git
+git clone https://github.com/nunocachada/twitter-bot.git
 ```
 
 ### How to Run the Project
