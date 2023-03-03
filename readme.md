@@ -1,7 +1,5 @@
 ## Create a Twitter Bot for Your Event using Node.js, Twitter API v2, and node-cron
 
-Let's build a Twitter bot that will tweet for us. We will use an imaginary event for demo purposes.
-
 In this tutorial, we will build a Twitter bot that automatically generates and posts tweets for an upcoming event. For demo purposes we will use an imaginary event.
 
 ### Requirements
