@@ -44,7 +44,7 @@ npm install
 5. Run the following command to start the bot:
 
 ```bash
-node index.js
+npm start
 ```
 
 ### What This App Can Do
